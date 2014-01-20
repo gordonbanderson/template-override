@@ -6,24 +6,23 @@ Template override extension for the model
 1) Adds an AlternativeTemplate field
 2) Ability to edit that
 */
-class TemplateOverrideExtension extends DataObjectDecorator {
+class TemplateOverrideExtension extends DataExtension {
 
-  function extraStatics() { 
-    return array( 'db'=>array('AlternativeTemplate' => 'Varchar' ));
-  }
+  private static $db = array('AlternativeTemplate' => 'Varchar');
 
 
-  public function updateCMSFields( FieldSet &$fields ) {
-    $fields->addFieldToTab( "Root.Content.Template", new TextField( 'AlternativeTemplate', 'Alternative Template Name' ) );
+  public function updateCMSFields(FieldList $fields) {
+    $templatei18n = _t('TemplateOverride.TEMPLATE', 'Template');
+    $fields->addFieldToTab( 'Root.'.$templatei18n, new TextField( 'AlternativeTemplate',
+        _t('TemplateOverride.ALTERNATIVE_TEMPLATE_NAME', 'Alternative template name') ) );
 
     $info_field = new LiteralField(
       $name = 'infofield',
-      $content = '<p>If you wish to change the default template, type the name of the template here.
-          Otherwise the normal default template will be used</p>
-          '
+      $content = '<p>'._t('TemplateOverride.INFO', 'If you wish to change the default template, type the name of the template here.'.
+          'Otherwise the normal default template will be used.  Normally this will not required changing.').'</p>'
     );
 
-    $fields->addFieldToTab( 'Root.Content.Template', $info_field );
+    $fields->addFieldToTab( 'Root.'.$templatei18n, $info_field );
   }
 
 
