@@ -1,0 +1,21 @@
+{
+	"name": "weboftalent/template-override",
+	"description": "Enable optional template override for a single page",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "templates","override","weboftalent"],
+	"authors": [
+		{
+			"name": "Gordon Anderson",
+			"email": "gordon.b.anderson@gmail.com",
+			"homepage": "https://github.com/gordonbanderson/template-override",
+			"role": "Developer"
+		}
+	],
+    "support": {
+        "issues": "https://github.com/gordonbanderson/weboftalent-template-override/issues"
+    },
+	"require":
+	{
+		"silverstripe/framework": "~3.1"
+	}
+}
