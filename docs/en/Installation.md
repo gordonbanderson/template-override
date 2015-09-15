@@ -6,4 +6,6 @@ cd template-override
 git checkout 3.1
 ```
 ###Using Composer
-TODO
+```bash
+composer require weboftalent/template-override 3.1.x-dev
+```
