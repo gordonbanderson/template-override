@@ -1,9 +1,0 @@
----
-name: wot-adverts-extensions
----
-SiteTree:
-  extensions:
-    ['TemplateOverrideExtension']
-Page_Controller:
-  extensions:
-     ['PageControllerTemplateOverrideExtension']
