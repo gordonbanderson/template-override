@@ -16,10 +16,10 @@ class TemplateOverrideExtension extends DataExtension {
 
 		$info_field = new LiteralField(
 			$name = 'infofield',
-			$content = '<p>'._t('TemplateOverride.INFO', 'If you wish to change the default'.
-						'template, type the name of the template here.  Otherwise the normal'.
-						'default template will be used.  Normally this will not require '.
-						'changing.').'</p>'
+			$content = '<p class="message">'._t('TemplateOverride.INFO', 'If you wish to change'.
+						' the default template, type the name of the template here.  Otherwise '.
+						' the normal default template will be used.  Normally this will not '.
+						' require changing.').'</p>'
 		);
 
 		$fields->addFieldToTab( 'Root.'.$templatei18n, $info_field );

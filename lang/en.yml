@@ -1,0 +1,5 @@
+en:
+  TemplateOverride:
+    TEMPLATE: 'Template'
+    ALTERNATIVE_TEMPLATE_NAME: 'Name of the overriding template'
+    INFO: 'If you wish to change the default template, type the name of the template here. Otherwise the normal default template will be used.  Normally this will not required changing.'
