@@ -33,11 +33,30 @@ class PageControllerTemplateOverrideExtension extends Extension {
 	If the alternative template exists, render that, otherwise render with the default template
 	*/
 	function index() {
+		return $this->useTemplateOverride();
+	}
+
+	/**
+	 * Render this page using the template override iff it exists
+	 * @return an array suitable for SilverStripe to use the correct template
+	 */
+	function useTemplateOverride($data = null) {
 		$template = $this->owner->AlternativeTemplate;
 		if ( isset($template) && $template != '' ) {
-			return $this->owner->renderWith( array( $this->owner->AlternativeTemplate, 'Page' ) );
+			if ($data) {
+				return $this->owner->customise(new ArrayData($data))
+						->renderWith( array( $this->owner->AlternativeTemplate, 'Page' ) );
+			} else {
+				return $this->owner->renderWith( array( $this->owner->AlternativeTemplate, 'Page' ) );
+			}
+
 		} else {
-			return array();
+			if ($data) {
+				return $data;
+			} else {
+				return array();
+			}
+
 		}
 	}
 }
