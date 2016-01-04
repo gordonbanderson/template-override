@@ -45,9 +45,9 @@ class PageControllerTemplateOverrideExtension extends Extension {
 		if ( isset($template) && $template != '' ) {
 			if ($data) {
 				return $this->owner->customise(new ArrayData($data))
-						->renderWith( array( $this->owner->AlternativeTemplate, 'Page' ) );
+						->renderWith( array( $this->owner->AlternativeTemplate, $this->owner->ClassName, 'Page' ) );
 			} else {
-				return $this->owner->renderWith( array( $this->owner->AlternativeTemplate, 'Page' ) );
+				return $this->owner->renderWith( array( $this->owner->AlternativeTemplate, $this->owner->ClassName, 'Page' ) );
 			}
 
 		} else {
