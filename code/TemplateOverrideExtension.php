@@ -11,8 +11,8 @@ class TemplateOverrideExtension extends DataExtension {
 
 	public function updateCMSFields(FieldList $fields) {
 		$templatei18n = _t('TemplateOverride.TEMPLATE', 'Template');
-		$fields->addFieldToTab( 'Root.'.$templatei18n, new TextField( 'AlternativeTemplate',
-				_t('TemplateOverride.ALTERNATIVE_TEMPLATE_NAME', 'Alternative template name') ) );
+		$fields->addFieldToTab('Root.'.$templatei18n, new TextField('AlternativeTemplate',
+				_t('TemplateOverride.ALTERNATIVE_TEMPLATE_NAME', 'Alternative template name')));
 
 		$info_field = new LiteralField(
 			$name = 'infofield',
@@ -22,6 +22,6 @@ class TemplateOverrideExtension extends DataExtension {
 						' require changing.').'</p>'
 		);
 
-		$fields->addFieldToTab( 'Root.'.$templatei18n, $info_field );
+		$fields->addFieldToTab('Root.'.$templatei18n, $info_field);
 	}
 }

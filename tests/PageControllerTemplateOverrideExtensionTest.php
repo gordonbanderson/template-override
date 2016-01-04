@@ -11,11 +11,11 @@ class PageControllerTemplateOverrideExtensionTest extends FunctionalTest {
 		$page->write();
 		$page->doPublish();
 		$response = $this->get('/' . $page->URLSegment);
-        $this->assertEquals(200, $response->getStatusCode());
+		$this->assertEquals(200, $response->getStatusCode());
 
-        // assert the the inner layout template has been used
-        $this->assertExactMatchBySelector("div.marker", array(
-		    "INNER LAYOUT"
+		// assert the the inner layout template has been used
+		$this->assertExactMatchBySelector("div.marker", array(
+			"INNER LAYOUT"
 		));
 	}
 
@@ -27,11 +27,11 @@ class PageControllerTemplateOverrideExtensionTest extends FunctionalTest {
 		$page->write();
 		$page->doPublish();
 		$response = $this->get('/' . $page->URLSegment);
-        $this->assertEquals(200, $response->getStatusCode());
+		$this->assertEquals(200, $response->getStatusCode());
 
-        // show the the outer layout template has been used
-        $this->assertExactMatchBySelector("div.marker", array(
-		    "OUTER OF LAYOUT"
+		// show the the outer layout template has been used
+		$this->assertExactMatchBySelector("div.marker", array(
+			"OUTER OF LAYOUT"
 		));
 	}
 
@@ -43,10 +43,10 @@ class PageControllerTemplateOverrideExtensionTest extends FunctionalTest {
 		$page->write();
 		$page->doPublish();
 		$response = $this->get('/' . $page->URLSegment);
-        $this->assertEquals(200, $response->getStatusCode());
-        $body = $response->getBody();
-        $this->assertNotContains('OUTER OF LAYOUT', $body);
-        $this->assertNotContains('INNER LAYOUT', $body);
+		$this->assertEquals(200, $response->getStatusCode());
+		$body = $response->getBody();
+		$this->assertNotContains('OUTER OF LAYOUT', $body);
+		$this->assertNotContains('INNER LAYOUT', $body);
 	}
 
 

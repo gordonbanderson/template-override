@@ -15,12 +15,12 @@ class PageControllerTemplateOverrideExtension extends Extension {
 	 */
 	function useTemplateOverride($data = null) {
 		$template = $this->owner->AlternativeTemplate;
-		if ( isset($template) && $template != '' ) {
+		if (isset($template) && $template != '') {
 			if ($data) {
 				return $this->owner->customise(new ArrayData($data))
-						->renderWith( array( $this->owner->AlternativeTemplate, $this->owner->ClassName, 'Page' ) );
+						->renderWith(array($this->owner->AlternativeTemplate, $this->owner->ClassName, 'Page'));
 			} else {
-				return $this->owner->renderWith( array( $this->owner->AlternativeTemplate, $this->owner->ClassName, 'Page' ) );
+				return $this->owner->renderWith(array($this->owner->AlternativeTemplate, $this->owner->ClassName, 'Page'));
 			}
 
 		} else {
