@@ -44,7 +44,7 @@ before_script:
   - cd ~/builds/ss
 
 script:
-  - vendor/bin/phpunit --coverage-clover=coverage.clover $MODULE_PATH/tests/
+  - vendor/bin/phpunit --coverage-clover=coverage.clover -c $MODULE_PATH/phpunit.xml $MODULE_PATH/tests/
 
 after_success:
     - cp coverage.clover ~/coverage.xml
@@ -53,7 +53,6 @@ after_success:
 
     # Upload Coverage to Scrutinizer
     - travis_retry wget https://scrutinizer-ci.com/ocular.phar
-
     - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
 
     # Upload test coverage to codecov
