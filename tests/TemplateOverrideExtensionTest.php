@@ -5,11 +5,6 @@ class TemplateOverrideExtensionTest extends SapphireTest {
 	protected static $fixture_file = 'template-override/tests/pages.yml';
 
 	public function setUpOnce() {
-		/*
-		$this->requiredExtensions = array(
-			'Member' => array('MapExtension', 'MapLayerExtension')
-		);
-		*/
 		parent::setupOnce();
 	}
 
