@@ -1,7 +1,7 @@
 # Template Override
-[![Build Status](https://travis-ci.org/gordonbanderson/template-override.svg?branch=master)](https://travis-ci.org/gordonbanderson/template-override)[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gordonbanderson/template-override/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/template-override/?branch=master)[![Code Coverage](https://scrutinizer-ci.com/g/gordonbanderson/template-override/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/template-override/?branch=master)[![Build Status](https://scrutinizer-ci.com/g/gordonbanderson/template-override/badges/build.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/template-override/build-status/master)[![codecov.io](https://codecov.io/github/gordonbanderson/template-override/coverage.svg?branch=master)](https://codecov.io/github/gordonbanderson/template-override?branch=master)[![Dependency Status](https://www.versioneye.com/php/weboftalent:template-override/dev-master/badge?style=flat)](https://www.versioneye.com/php/weboftalent:template-override/dev-master)
+[![Build Status](https://travis-ci.org/gordonbanderson/template-override.svg?branch=3.1)](https://travis-ci.org/gordonbanderson/template-override)[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gordonbanderson/template-override/badges/quality-score.png?b=3.1)](https://scrutinizer-ci.com/g/gordonbanderson/template-override/?branch=3.1)[![Code Coverage](https://scrutinizer-ci.com/g/gordonbanderson/template-override/badges/coverage.png?b=3.1)](https://scrutinizer-ci.com/g/gordonbanderson/template-override/?branch=3.1)[![Build Status](https://scrutinizer-ci.com/g/gordonbanderson/template-override/badges/build.png?b=3.1)](https://scrutinizer-ci.com/g/gordonbanderson/template-override/build-status/3.1)[![codecov.io](https://codecov.io/github/gordonbanderson/template-override/coverage.svg?branch=3.1)](https://codecov.io/github/gordonbanderson/template-override?branch=3.1)[![Dependency Status](https://www.versioneye.com/php/weboftalent:template-override/dev-master/badge?style=flat)](https://www.versioneye.com/php/weboftalent:template-override/dev-master)
 
-![codecov.io](https://codecov.io/github/gordonbanderson/template-override/branch.svg?branch=master)
+![codecov.io](https://codecov.io/github/gordonbanderson/template-override/branch.svg?branch=3.1)
 
 ## Maintainers
 
@@ -21,5 +21,5 @@ For more documentation about the module see the provided documentation located
 inside the docs folder.
 
 ##Requirements
-* SilverStripe master
+* SilverStripe 3.1
 
