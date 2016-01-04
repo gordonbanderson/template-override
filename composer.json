@@ -11,6 +11,7 @@
 			"role": "Developer"
 		}
 	],
+	"license": "BSD-3-Clause",
     "support": {
         "issues": "https://github.com/gordonbanderson/weboftalent-template-override/issues"
     },
