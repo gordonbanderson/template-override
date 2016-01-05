@@ -4,6 +4,18 @@ inherit: true
 tools:
     external_code_coverage:
       timeout: 600
+    php_code_sniffer:
+      config:
+        standard: PSR2
+    php_cs_fixer:
+      extensions:
+        # Default:
+        - php
+      fixers: []
+      enabled: false
+      filter:
+            paths:                [tests/*,code/*]
+            excluded_paths:       []
 
 filter:
     paths: [tests/*,code/*]
