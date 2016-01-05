@@ -14,8 +14,13 @@ tools:
       fixers: []
       enabled: false
       filter:
-            paths:                [tests/*,code/*]
-            excluded_paths:       []
+            paths: [tests/*,code/*]
+            excluded_paths: []
+coding_style:
+  php:
+    indentation:
+      general:
+        use_tabs: false
 
 filter:
     paths: [tests/*,code/*]
