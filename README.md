@@ -35,5 +35,4 @@ For more documentation about the module see the provided documentation located
 inside the docs folder.
 
 ##Requirements
-* SilverStripe 3.1
-
+* SilverStripe 3.1 or 3.2

@@ -11,11 +11,12 @@
 			"role": "Developer"
 		}
 	],
+	"license": "BSD-3-Clause",
     "support": {
         "issues": "https://github.com/gordonbanderson/weboftalent-template-override/issues"
     },
 	"require":
 	{
-		"silverstripe/framework": "~3.1"
+		"silverstripe/cms": "~3.1"
 	}
 }
